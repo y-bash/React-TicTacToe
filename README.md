@@ -14,7 +14,7 @@ The source code comments written in Japanese Language.
 
 In the project directory, you can install:
 
-```
+```bash
 $ npm install
 ```
 
@@ -22,7 +22,9 @@ $ npm install
 
 In the project directory, you can run:
 
-### `npm start`
+```bash
+$ npm start
+```
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -30,7 +32,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `npm run build`
+```bash
+$ npm run build
+```
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -40,14 +44,15 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## src/rules/Rules.ts
-
+## Improvements
 
 ### 3 by 3 Grid
 
 <img width="300" src="https://raw.githubusercontent.com/y-bash/React-TicTacToe/master/tic-tac-toe_3x3.png">
 
-```
+src/rules/Rules.ts
+
+```typescript
 export type Piece = "O" | "X"
 const PLAYERS: Piece[]  = ["O", "X"]
 const COLS   : string[] = ["a", "b", "c"]
@@ -62,7 +67,9 @@ const BINGO_LINES: number[][] = [
 
 <img width="350" src="https://raw.githubusercontent.com/y-bash/React-TicTacToe/master/tic-tac-toe_4x4.png">
 
-```
+src/rules/Rules.ts
+
+```typescript
 export type Piece = "O" | "X" | "H"
 const PLAYERS: Piece[]  = ["O", "X", "H"]
 const COLS   : string[] = ["a", "b", "c", "d"]
