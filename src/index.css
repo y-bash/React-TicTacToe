@@ -1,0 +1,141 @@
+body {
+  font  : 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+.title {                       /* アプリ全体のヘッダ */
+  color      : steelblue;
+  font-size  : 20px;
+  font-weight: bold;
+  text-align : center;
+  width      : 216px;
+}
+
+/* --------------------------- <GameCompo> ゲーム・コンポ --------- */
+
+.game {
+  display       : flex;
+  flex-direction: row;
+}
+
+/* --------------------------- <BoardCompo> 盤面コンポ ------------ */
+
+[class^="bd-head"] {           /* ヘッダ 共通項 */
+  background  : #fff;
+  border      : 1px solid #fff;
+  color       : #777;
+  float       : left;
+  font-size   : 12px;
+  font-weight : bold;
+  list-style  : none;
+  margin-right: -1px;
+  margin-top  : -1px;
+  padding     :  0px;
+  text-align  : center;
+}
+
+.bd-head-org {                 /* ヘッダ 左上隅 */
+  height     : 18px;
+  line-height: 18px;
+  width      : 12px;
+
+}
+
+.bd-head-top {                 /* ヘッダ a/b/c  */
+  height     : 18px;
+  line-height: 18px;
+  width      : 34px;
+}
+
+.bd-head-left {                /* ヘッダ 1/2/3  */
+  height     : 34px;
+  line-height: 34px;
+  width      : 12px;
+
+}
+
+/* --------------------------- <SquareCompo> マス目コンポ --------- */
+
+[class^="square"] {            /* 共通項                 */
+  background  : #fff;
+  border      :  1px solid #999;
+  float       : left;
+  font-size   : 24px;
+  font-weight : bold;
+  height      : 34px;
+  line-height : 34px;
+  margin-right: -1px;
+  margin-top  : -1px;
+  padding     :  0px;
+  text-align  : center;
+  width       : 34px;
+}
+
+[class^="square"]:focus {      /* 共通項 フォーカス時    */
+  background: #ddd;
+  outline   : 0px;
+}
+
+.square {                      /* ビンゴライン上ではない */
+  color: black;
+}
+
+.square-bingo {                /* ビンゴライン上         */
+  color: darkred;
+}
+
+/* --------------------------- <StatusCompo> ステータス・コンポ --- */
+.status {
+  color      : #555;
+  margin-left: 10px;
+  text-align : center;
+}
+
+
+/* --------------------------- <HistoryCompo> 履歴コンポ ---------- */
+.history {
+  margin-left: 20px;
+}
+
+.hs-header {                   /* ヘッダ                            */
+  background : white;
+  border     :  0px;
+  color      : #555;
+  height     : 18px;
+  line-height: 16px;
+  text-align : center;
+}
+
+.hs-order {                    /* 並び順ボタン(▼▲昇降トグル)        */
+  font-size  :  9px;
+  height     : 14px;
+  margin-left: 10px;
+  padding    :  0px;
+  width      : 14px;
+}
+
+.hs-body {                     /* ボディ                            */
+  border        : 1px solid #999;
+  display       : flex;
+  flex-direction: column;
+/*height        :172px;*/
+  padding       :  0px;
+  width         : 90px;
+}
+
+[class^="step"] {              /* 履歴ステップ(履歴行) 共通項       */
+  border    : 0px;
+  color     : #555;
+  outline   : 0px;
+  width     : 100%;
+  text-align: left;
+}
+
+.step {                        /* 履歴ステップ         選択中でない */
+  background: white;
+}
+
+.step-curr {                   /* 履歴ステップ         選択中       */
+  background : lightblue;
+  font-weight: bold;
+}

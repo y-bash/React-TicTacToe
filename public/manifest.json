@@ -1,0 +1,8 @@
+{
+  "short_name": "Tic-tac-toe",
+  "name": "React tutorial application (Tic-tac-toe), using React Hooks and TypeScript",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
